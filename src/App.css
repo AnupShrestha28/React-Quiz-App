@@ -1,0 +1,78 @@
+.App{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+body{
+  background-color: rgb(30, 48, 52);
+}
+
+.Menu, 
+.Quiz, 
+.EndScreen {
+  width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(30, 48, 52);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+}
+
+.questions{
+  font-size: 18px;
+  margin-top: auto; 
+  margin-bottom: auto; 
+}
+
+.Menu button,
+.Quiz button,
+.EndScreen button{
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Menu button:focus,
+.Quiz button:focus,
+.EndScreen button:focus {
+  outline: none; /* Remove default focus outline */
+  border: 3px solid rgb(19, 209, 183); /* Add border when focused */
+}
+
+.Menu,
+.Quiz,
+.EndScreen{
+  color: white;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EndScreen .message-info{
+  font-size: 20px;
+}
+
+.Quiz .error-message-info{
+  color: red;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-top: 50px; */
+}
